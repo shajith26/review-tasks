@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // #Given two strings, write a program that finds which string has more vowels
+	
+	
+	 {
+		var a = "mohamed";
+	  
+	    var b = "aeiou";
+		
+      function isVowel(ch) {
+        ch = ch.toUpperCase();
+        return ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U";
+      }
+	  
+	  
+      function countVowels(a)
+      {
+        var count = 0;
+        for (var i = 0; i < a.length; i++)
+          if (isVowel(a[i]))
+           
+            count++;
+        return count;
+      }
+       
+	  
+      function isVowel(ch) {
+        ch = ch.toUpperCase();
+        return ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U";
+      }
+	  
+      function countVowels(b)
+      {
+        var count = 0;
+        for (var i = 0; i < b.length; i++)
+          if (isVowel(b[i]))
+           
+            count++;
+        return count;
+      }
+	  
+	  if (countVowels(b)>countVowels(a)){
+		  console.log(b)
+	  }else{
+		  console.log(a)
+	  }
+	  
+	} 
+
+
+    // pirates program 
+	
+	{
+		let gold=80;
+		let pirates=30;
+		if(gold>=pirates){
+			if(gold+pirates>100){
+				console.log("flase");
+			}else{
+				console.log("true")
+			}
+		}
+	}
+
+    /*Given a number from 1 to 4 (inclusive),return a word representation of the number. 
+For example, given 2, return two. If the number is greater than 4,
+ return the phrase too large. If the number is less than 1, 
+return the phrase too small.*/
+	
+	{
+		let x=0;
+		
+		if(x>=1 && x<=4){			
+			switch (x){
+			case (1): console.log ('one');
+			break;
+			case (2): console.log ('two');
+			break;
+			case (3): console.log('three');
+			break;
+			case (4): console.log('four');
+			break;
+		}
+		}else if(x>4){
+			console.log("the phrase too large");
+		}else{
+			console.log("the pharse too small");
+		}
+	}
+
+
+// find Nth number of given number
+	
+{
+		let n=5;
+		function findsum (n){
+			let sum=0;
+			for (let i=1;i<=n;i++)
+				sum=sum+i;
+			return sum;
+		}
+		console.log(findsum(n));
+	}
+
+//reverse the given number in words
+	
+{
+	const given=[1,2,3,0,9,5];
+		const reverse=given.reverse();
+		console.log(reverse)
+	
+	for(let i=0;i<reverse.length;i++){
+		switch(reverse[i]){
+				case 1:
+				console.log("one");
+				break;
+				case 2:
+				console.log("two");
+				break;
+				case 3:
+				console.log("three");
+				break;
+				case 4:
+				console.log("four");
+				break;
+				case 5:
+				console.log("five");
+				break;
+				case 6:
+				console.log("six");
+				break;
+				case 7:
+				console.log("seven");
+				break;
+				case 8:
+				console.log("eight");
+				break;
+				case 9:
+				console.log("nine");
+				break;
+				case 0:
+				console.log("zero");
+				break;
+			}
+		}
+	}
+//// Write a program to Check whether a date is a weekend date or not
+
+
+{
+	
+	let a=new Date();
+	 a.setDate(24);
+	  a.getDate();
+	  let b=a.getDay();
+	  
+	  
+	console.log(b)
+		
+		
+		
+	if((b==0)||(b==6)){
+		console.log("this is weekend")
+	}else{
+		console.log("not a weekend")
+	}	
+	
+}
+
+{
+	let a=new Date();
+	 a.setMonth(4);
+	  a.getMonth();
+	  a.setDate(26);
+	  a.getDate();
+	  let b=a.getDay();
+	  
+	  
+	console.log(b)
+		
+		
+		
+	if((b==0)||(b==6)){
+		console.log("this is weekend")
+	}else{
+		console.log("not a weekend")
+	}
+	
+}
+
+/*Write a program that prints the numbers 
+from 1 through 100. But for multiples of three 
+print “Fizz” instead of the number and for the
+ multiples of five print “Buzz”. For numbers 
+ which are multiples of both three and 
+ five print “FizzBuzz”.*/
+ 
+ {
+	  let x=1;
+	 
+	 while(x<100){
+	 
+	 if (x%3==0 && x%5==0){
+		 console.log('FizzBuzz')
+	 }else if(x%3==0){
+		 console.log('Fizz')
+	 }else if(x%5==0){
+		 console.log('Buzz')
+	 }else{
+		 console.log(x)
+	 }
+	 x++;
+     }
+	 
+ }
+
+// swap two numbers without using third variable :
+ 
+{
+	 let a=55;
+	 let b=45;
+	 
+	 a=a+b;
+	 b=a-b;
+	 a=a-b;
+	 
+	 console.log(a)
+	 console.log(b)
+ }
+
+//// background color will change when each time of button is clicked
+{
+	 <h2>click the button</h2>
+        <button id='change'>change color</button>
+        <h1 id="backgroundcolor"></h1>
+        
+        
+
+        let changeEle=document.getElementById("change");
+        let bcolor=document.getElementById("backgroundcolor");
+	
+		
+		
+        button.addEventListener("click",function(){
+            
+			var randomcolor=math.floor(math.random()*15977)
+				
+				console.log(randomcolor)
+			
+			
+			
+        })
+
+
+    </script>
+</body>
+</html>
