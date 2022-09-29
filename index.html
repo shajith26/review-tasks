@@ -238,29 +238,20 @@ print “Fizz” instead of the number and for the
 	 console.log(b)
  }
 
-//// background color will change when each time of button is clicked
-{
-	 <h2>click the button</h2>
-        <button id='change'>change color</button>
-        <h1 id="backgroundcolor"></h1>
-        
-        
+// time difference 
 
-        let changeEle=document.getElementById("change");
-        let bcolor=document.getElementById("backgroundcolor");
-	
-		
-		
-        button.addEventListener("click",function(){
-            
-			var randomcolor=math.floor(math.random()*15977)
-				
-				console.log(randomcolor)
-			
-			
-			
-        })
 
+let time1 = new Date();
+	time1.getTime();
+	console.log(time1);
+let time2 = new Date(27);
+	time1.getTime();	
+ 	console.log(time2)
+
+function timef(){
+	let change=time1-time2;
+	console.log(change)
+}timef();
 
     </script>
 </body>
