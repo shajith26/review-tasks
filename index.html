@@ -240,7 +240,7 @@ print “Fizz” instead of the number and for the
 
 // time difference 
 
-
+{
 let time1 = new Date();
 	time1.getTime();
 	console.log(time1);
@@ -252,6 +252,40 @@ function timef(){
 	let change=time1-time2;
 	console.log(change)
 }timef();
+}
+
+
+
+{
+	let date1= new Date('2022/04/25 , 01:00:00');
+	let date2= new Date('2022/04/24 , 02:00:00');
+
+
+	let time=date1.getTime()-date2.getTime();
+
+	let day=time/(1000*60*60);
+
+
+	console.log(day)
+	console.log(day+"hours")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
 </body>
