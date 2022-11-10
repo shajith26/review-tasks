@@ -335,16 +335,343 @@ let edit=array.flatMap(function(element){
 
 
 
+{
+	let a=[1,2,3,4,5];
+
+	let b=a.map(function(element){
+		return element+1;
+	})console.log(b)
+}
+
+	let a=[1,2,3];
+
+	let b=a.reduce(function(element1,element2){
+		return element1+element2;
+	});console.log(b);
 
 
 
+ let a=["shajith",1,"fabevy"];
+
+ console.log(a.unshift("mohamed"));
+
+ console.log(a);
+
+ 
+
+  
+let x=[[10,20],[30,40]];
+
+let y=x.reduce(function(a1,a2){
+	return a1.concat(a2);
+});
+console.log(y);
+
+//fillter in obj
 
 
+var town = {
+		shop: "Yes",
+		bakery: "Yes",
+		stationary_shop : "No"
+	};
+	
+	const res = Object.keys(town).filter(i => town[i] === 'Yes')
+	
+	console.log(res)
+
+	// foreach method obj
+
+	var myObject = { 'a': 1, 'b': 2, 'c': 3 };
+
+	Object.keys(myObject).forEach(function(key, index) {
+	  myObject[key] *= 2;
+	});
+	
+	console.log(myObject);
+
+	// includes in obj
+
+	const user = {
+		firstName: "Mohamed",
+		lastName: "Shajith",
+		userName: "Shajith",
+		email: "123.com",
+		hobby: "Explore The World"
+	};
+
+	const names = Object.keys(user)
+    .filter((key) => key.includes("Name"));
+
+console.log(names);
+
+// find in obj
+let friends = [
+		{name:"shajith",location:"chennai"},
+		{name:"faizal",location:"cbi"},
+		{name:"prem",location:"chennai"}
+	];
+
+	let obj= friends.find(abc => abc.location === prompt("enter the location to find near by friend !!"));
+
+	console.log(obj);
+
+	// flatmap
+
+	let a=[1,2,[3,4],5,6];
+
+	let b=a.flatMap((a)=>a);
+
+	console.log(b);
+
+	// copywithin
+
+	let name=['shajith','prem','ramesh','mani'];
+
+	let some=name.copyWithin(2,0,2);
+
+	console.log(some);
+
+	// pop arr of obj
+
+	var obj =[
+        {a: '1'},
+        {b: '2'},
+        {c: '3'}
+];
+	let abc=obj.pop();
+	console.log(abc);
+
+	// fill arr of obj
+
+var num1 =[
+        {a: '12'},
+        {b: '23'},
+        {c: '45'}
+];
+
+let some=num1.fill(100);
+console.log(some)
+
+	// join objects
+
+	let person = {
+    firstName: 'vijay',
+    lastName: 'sethupathy',
+    age: 37,
+    mble_no: '123-456-2356'
+};
 
 
+let job = {
+    jobTitle: 'Actor',
+    location: 'Chennai'
+};
+
+let about = {
+    ...person,
+    ...job
+};
+
+console.log(about);
+
+// sort
+
+var items = [
+  { name: 'Edward', value: 21 },
+  { name: 'Sharpe', value: 37 },
+  { name: 'And', value: 45 },
+  { name: 'The', value: -12 },
+  { name: 'Magnetic', value: 13 },
+  { name: 'Zeros', value: 37 }
+];
+
+items.sort(function (a, b) {
+  return a.value - b.value;
+});
 
 
+	// map
+		var arr = [{
+			id: 1,
+			name: 'vijay'
+	}, {
+			id: 2,
+			name: 'ajith'
+	}]
+
+	var result = arr.map(person => ({ num: person.id, fiends: person.name }));
+	console.log(result)
+
+	//reduce
+	var arr = [{x:1}, {x:2}, {x:4}];
+var result = arr.reduce(function (a, b) { return a + b.x; }, 0);
+console.log(result); 
+
+	//reduce right
+
+
+	var arr = [{x:5}, {x:7}, {x:10}];
+var result = arr.reduceRight(function (a, b) { return a + b.x; }, 0);
+console.log(result); 
+
+	// some 
+
+	let friends = [
+		{name:"shajith",location:"chennai"},
+		{name:"faizal",location:"cbi"},
+		{name:"prem",location:"chennai"}
+	];
+
+	let obj= friends.find(abc => abc.location === prompt("enter the location to find near by friend !!"));
+
+	console.log(obj);
+
+	// var x="*";
+	// for(i=3;i>0,i--){
+	// 	x+="*";
+	// 	console.log(s)
+	// }
+
+
+	var x="*";
+	var s="";
+	for(i=5;i>0;i--){
+		s+=x;
+		console.log(s)
+	}
+
+
+	var x="*";
+	var s="";
+	for(i=1;i<6;i++){
+		s+=x;
+		console.log(s);
+	}
+
+	// print reverse a number in word
+	{
+		const num=[7,3,5,7,1];
+		const reverse=num.reverse();
+		console.log(reverse)
+	
+	for(let i=0;i<reverse.length;i++){
+		switch(reverse[i]){
+				case 1:
+				console.log("one");
+				break;
+				case 2:
+				console.log("two");
+				break;
+				case 3:
+				console.log("three");
+				break;
+				case 4:
+				console.log("four");
+				break;
+				case 5:
+				console.log("five");
+				break;
+				case 6:
+				console.log("six");
+				break;
+				case 7:
+				console.log("seven");
+				break;
+				case 8:
+				console.log("eight");
+				break;
+				case 9:
+				console.log("nine");
+				break;
+				case 0:
+				console.log("zero");
+				break;
+			}
+		}
+	}
 
     </script>
+
+
+
+myObject = { 'a': 1, 'b': 2, 'c': 3 }
+
+newObject = Object.keys(myObject).map(function (value, label) {
+    return [value] * value;
+});
+
+
+	--map , --filter ,--reduce ,--find,--foreach
+
+	--reduceright , --pop , --flatmap , --some , --copywithin , --fill , --sort , --join , from 
+
+
+	let x=['from'];
+
+	let y=x.from;
+	console.log(y)
+
+
+	let obj=[{'a'},{'b'},{'d'},{'c'}];
+
+	console.log(obj.sort());
+
+	let abc = {
+		a:{num:1},
+		b:{num:2},
+		c:{num:3}
+	};
+	.keys(abc).reduce(function(a,b){
+		return a + abc[b].value;
+	},0);
+
+
+	let persons =[
+		{firstname:"mohamed",lastname:"shajith"},
+		{firstname:"prem",lastname:"chand"}
+	];
+	person.map(getfullname);
+
+	function getfullname(item){
+		return [item.firstname,item.lastname].join("");
+	}
+
+
+	let a=10,
+	b=20
+
+	let x=((a,b)=>a+b);
+	console.log(x)
+
+
+
+	let a=[1,2,3,4,5];
+
+	let x=a.filter((s)=>s>=3);
+	console.log(x)
+
+
+
+	map
+
+
+	const objectMap = (obj, fn) =>
+  Object.fromEntries(
+    Object.entries(obj).map(
+      ([k, v], i) => [k, fn(v, k, i)]
+    )
+  )
+  
+const myObject = { a: 1, b: 2, c: 3 }
+
+console.log(objectMap(myObject, v => 2 * v)) 
+
+
+	
+
+
+
+
 </body>
 </html>
